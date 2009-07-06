@@ -1,0 +1,11 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = WOBezelButton; LANGUAGE = ObjC; SUPERCLASS = NSButton; }, 
+        {CLASS = WOBezelButtonCell; LANGUAGE = ObjC; SUPERCLASS = NSButtonCell; }, 
+        {CLASS = WOBezelPalette; LANGUAGE = ObjC; SUPERCLASS = IBPalette; }, 
+        {CLASS = WOBezelView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = WOBezelWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }
+    ); 
+    IBVersion = 1; 
+}

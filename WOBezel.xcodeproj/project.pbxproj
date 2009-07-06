@@ -1,0 +1,1286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BC51F0650B2C78AC00F32073 /* WOBezel + Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC51F06D0B2C78DF00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel + Tests" */;
+			buildPhases = (
+				BC70D1290B31E6430003BC72 /* CopyFiles */,
+			);
+			dependencies = (
+				BC51F0AA0B2C79E000F32073 /* PBXTargetDependency */,
+			);
+			name = "WOBezel + Tests";
+			productName = "WOBezel + Tests";
+		};
+		BC51F0670B2C78B900F32073 /* WOBezel + Tests (run) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC51F0700B2C78DF00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel + Tests (run)" */;
+			buildPhases = (
+				BC51F0930B2C79B000F32073 /* ShellScript */,
+			);
+			dependencies = (
+				BC51F06B0B2C78C100F32073 /* PBXTargetDependency */,
+			);
+			name = "WOBezel + Tests (run)";
+			productName = "WOBezel + Tests (run)";
+		};
+		BC51F0730B2C78E600F32073 /* WOBezel installed */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC51F0A00B2C79CA00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel installed" */;
+			buildPhases = (
+				BC51F08F0B2C795800F32073 /* ShellScript */,
+			);
+			dependencies = (
+				BC51F08C0B2C794900F32073 /* PBXTargetDependency */,
+			);
+			name = "WOBezel installed";
+			productName = "WOBezel installed";
+		};
+		BC51F0750B2C78FB00F32073 /* Copy headers */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC51F0A30B2C79CA00F32073 /* Build configuration list for PBXAggregateTarget "Copy headers" */;
+			buildPhases = (
+				BC51F0740B2C78FB00F32073 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = "Copy headers";
+			productName = "Copy headers";
+		};
+		BC51F0F40B2C7C9A00F32073 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC51F0F60B2C7CC300F32073 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				BC51F0F30B2C7C9A00F32073 /* Run Script (Doxygen) */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+		BC90BC0C09AF996200AAF708 /* Update build number */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BC90BC1109AF999D00AAF708 /* Build configuration list for PBXAggregateTarget "Update build number" */;
+			buildPhases = (
+				BC90BC0B09AF996200AAF708 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Update build number";
+			productName = "Update build number";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		BC00F11008326C0E00007A5A /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00F10F08326C0E00007A5A /* ApplicationServices.framework */; };
+		BC26E6BA0830EE90003F5E44 /* WONotificationBezelWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26E6B60830EE90003F5E44 /* WONotificationBezelWindow.m */; };
+		BC26E6C90830EEB3003F5E44 /* WONotificationBezelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26E6C50830EEB3003F5E44 /* WONotificationBezelView.m */; };
+		BC26E6D70830F918003F5E44 /* WONotificationBezelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26E6D50830F918003F5E44 /* WONotificationBezelManager.m */; };
+		BC3F403C083D53570008E60B /* splash-lower-transition.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F403A083D53570008E60B /* splash-lower-transition.png */; };
+		BC3F403D083D53570008E60B /* splash-upper-transition.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3F403B083D53570008E60B /* splash-upper-transition.png */; };
+		BC51F07A0B2C793C00F32073 /* WONotificationBezelView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC26E6C40830EEB3003F5E44 /* WONotificationBezelView.h */; };
+		BC51F07B0B2C793C00F32073 /* WOBezel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCAF03380735166E0043CFC7 /* WOBezel.h */; };
+		BC51F07C0B2C793C00F32073 /* WOBezelWindow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCAF031E073516320043CFC7 /* WOBezelWindow.h */; };
+		BC51F07F0B2C793C00F32073 /* WONotificationBezelWindow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC26E6B50830EE90003F5E44 /* WONotificationBezelWindow.h */; };
+		BC51F0800B2C793C00F32073 /* WOSplashView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCDA475B083AA4CA009B5FA8 /* WOSplashView.h */; };
+		BC51F0830B2C793C00F32073 /* WOSplashWindow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCDA475D083AA4CA009B5FA8 /* WOSplashWindow.h */; };
+		BC51F0840B2C793C00F32073 /* WOWindow.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCDA4771083AA54E009B5FA8 /* WOWindow.h */; };
+		BC51F0850B2C793C00F32073 /* WOBezelView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BCAF031F073516320043CFC7 /* WOBezelView.h */; };
+		BC51F0860B2C793C00F32073 /* WONotificationBezelManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC26E6D40830F918003F5E44 /* WONotificationBezelManager.h */; };
+		BC51F0DD0B2C7B2500F32073 /* WincentTestBundle.icns in Resources */ = {isa = PBXBuildFile; fileRef = BC51F0DC0B2C7B2400F32073 /* WincentTestBundle.icns */; };
+		BC51F0E90B2C7BE600F32073 /* WOBezel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* WOBezel.framework */; };
+		BC51F0EA0B2C7BFC00F32073 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		BC51F4120B2C994900F32073 /* NSObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F4110B2C994900F32073 /* NSObjectTests.m */; };
+		BC51F45D0B2CA1E300F32073 /* WOBezelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F45C0B2CA1E300F32073 /* WOBezelViewTests.m */; };
+		BC51F4620B2CA1EB00F32073 /* WOBezelWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F4610B2CA1EB00F32073 /* WOBezelWindowTests.m */; };
+		BC51F4670B2CA1FA00F32073 /* WONotificationBezelManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F4660B2CA1FA00F32073 /* WONotificationBezelManagerTests.m */; };
+		BC51F46C0B2CA20500F32073 /* WONotificationBezelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F46B0B2CA20500F32073 /* WONotificationBezelViewTests.m */; };
+		BC51F4710B2CA20D00F32073 /* WONotificationBezelWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F4700B2CA20D00F32073 /* WONotificationBezelWindowTests.m */; };
+		BC51F4760B2CA21B00F32073 /* WOSplashViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F4750B2CA21B00F32073 /* WOSplashViewTests.m */; };
+		BC51F47B0B2CA22300F32073 /* WOSplashWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F47A0B2CA22300F32073 /* WOSplashWindowTests.m */; };
+		BC51F4800B2CA22C00F32073 /* WOWindowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC51F47F0B2CA22C00F32073 /* WOWindowTests.m */; };
+		BC51F8D10B2CF62F00F32073 /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = BC51F8D00B2CF62F00F32073 /* RunTests.sh */; };
+		BC70D12B0B31E6590003BC72 /* WOBezelTests.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = BC51F09B0B2C79C900F32073 /* WOBezelTests.bundle */; };
+		BCAF0312073516250043CFC7 /* resizeTopLeftBottomRight.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAF030F073516250043CFC7 /* resizeTopLeftBottomRight.png */; };
+		BCAF0313073516250043CFC7 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAF0310073516250043CFC7 /* close.png */; };
+		BCAF0314073516250043CFC7 /* resizeTopRightBottomLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = BCAF0311073516250043CFC7 /* resizeTopRightBottomLeft.png */; };
+		BCAF0321073516320043CFC7 /* WOBezelView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAF0319073516320043CFC7 /* WOBezelView.m */; };
+		BCAF0328073516320043CFC7 /* WOBezelWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAF0320073516320043CFC7 /* WOBezelWindow.m */; };
+		BCAF0C8507374E300043CFC7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCAF0C8407374E300043CFC7 /* Carbon.framework */; };
+		BCCCF1D90BB3EFC100A36444 /* WOTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCCF1BD0BB3EF3900A36444 /* WOTest.framework */; };
+		BCDA4760083AA4CA009B5FA8 /* WOSplashWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA475C083AA4CA009B5FA8 /* WOSplashWindow.m */; };
+		BCDA4762083AA4CA009B5FA8 /* WOSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA475E083AA4CA009B5FA8 /* WOSplashView.m */; };
+		BCDA4774083AA54E009B5FA8 /* WOWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA4772083AA54E009B5FA8 /* WOWindow.m */; };
+		BCFD651F0F8663A200116980 /* WOBezel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* WOBezel.framework */; };
+		BCFD65210F8663A200116980 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFD65200F8663A200116980 /* Cocoa.framework */; };
+		BCFD65450F8666F800116980 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCFD65430F8666F800116980 /* MainMenu.xib */; };
+		BCFD65650F86679E00116980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFD65640F86679E00116980 /* main.m */; };
+		BCFD65760F86683A00116980 /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFD65750F86683A00116980 /* DemoController.m */; };
+		BCFD65950F866C7A00116980 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFD65940F866C7A00116980 /* splash.png */; };
+		BCFD66860F88B15B00116980 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = BCFD66850F88B15B00116980 /* LICENSE.txt */; };
+		BCFD67110F88BF8C00116980 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BCFD670F0F88BF8C00116980 /* Credits.rtf */; };
+		BCFD6A9D0F88D67400116980 /* play-bezel.png in Resources */ = {isa = PBXBuildFile; fileRef = BCFD6A9C0F88D67400116980 /* play-bezel.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC51F06A0B2C78C100F32073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC51F0650B2C78AC00F32073;
+			remoteInfo = "WOBezel + Tests";
+		};
+		BC51F08B0B2C794900F32073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = WOBezel;
+		};
+		BC51F0A90B2C79E000F32073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC51F09A0B2C79C900F32073;
+			remoteInfo = WOBezelTests;
+		};
+		BC51F0AB0B2C79E800F32073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = WOBezel;
+		};
+		BC90BC0D09AF997F00AAF708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC90BC0C09AF996200AAF708;
+			remoteInfo = "Update build number";
+		};
+		BCCCF1BC0BB3EF3900A36444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC56DDC6071BDDCE00287AF4;
+			remoteInfo = WOTest;
+		};
+		BCCCF1BE0BB3EF3900A36444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC37AD75072872CC00FDE665;
+			remoteInfo = WOTestRunner;
+		};
+		BCCCF1C00BB3EF3900A36444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCA9401808566F4300FE8D18;
+			remoteInfo = WOTestSelfTests;
+		};
+		BCCCF1D70BB3EFB700A36444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC56DDB8071BDDCE00287AF4;
+			remoteInfo = WOTest;
+		};
+		BCFD651D0F86638900116980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = WOBezel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC51F0740B2C78FB00F32073 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = WOBezel;
+			dstSubfolderSpec = 16;
+			files = (
+				BC51F07A0B2C793C00F32073 /* WONotificationBezelView.h in CopyFiles */,
+				BC51F07B0B2C793C00F32073 /* WOBezel.h in CopyFiles */,
+				BC51F07C0B2C793C00F32073 /* WOBezelWindow.h in CopyFiles */,
+				BC51F07F0B2C793C00F32073 /* WONotificationBezelWindow.h in CopyFiles */,
+				BC51F0800B2C793C00F32073 /* WOSplashView.h in CopyFiles */,
+				BC51F0830B2C793C00F32073 /* WOSplashWindow.h in CopyFiles */,
+				BC51F0840B2C793C00F32073 /* WOWindow.h in CopyFiles */,
+				BC51F0850B2C793C00F32073 /* WOBezelView.h in CopyFiles */,
+				BC51F0860B2C793C00F32073 /* WONotificationBezelManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC70D1290B31E6430003BC72 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = WOBezel.framework/Versions/A/Resources;
+			dstSubfolderSpec = 16;
+			files = (
+				BC70D12B0B31E6590003BC72 /* WOBezelTests.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* WOBezel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WOBezel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC00F10F08326C0E00007A5A /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		BC0BADF01001F0E8007AE543 /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
+		BC0BAE551001F0FC007AE543 /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "buildtools/base-style.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE561001F0FC007AE543 /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "buildtools/debug-style.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE571001F0FC007AE543 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE581001F10B007AE543 /* cocoa-app-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "cocoa-app-target.xcconfig"; path = "buildtools/cocoa-app-target.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE591001F10B007AE543 /* embeddable-framework-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "embeddable-framework-target.xcconfig"; path = "buildtools/embeddable-framework-target.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE5A1001F10B007AE543 /* framework-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "framework-target.xcconfig"; path = "buildtools/framework-target.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE5B1001F10B007AE543 /* loadable-bundle-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "loadable-bundle-target.xcconfig"; path = "buildtools/loadable-bundle-target.xcconfig"; sourceTree = "<group>"; };
+		BC0BAE5C1001F10B007AE543 /* loadable-test-bundle-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "loadable-test-bundle-target.xcconfig"; path = "buildtools/loadable-test-bundle-target.xcconfig"; sourceTree = "<group>"; };
+		BC0BAF051001F484007AE543 /* WOPublic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WOPublic; sourceTree = "<group>"; };
+		BC26E6B50830EE90003F5E44 /* WONotificationBezelWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WONotificationBezelWindow.h; sourceTree = "<group>"; };
+		BC26E6B60830EE90003F5E44 /* WONotificationBezelWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WONotificationBezelWindow.m; sourceTree = "<group>"; };
+		BC26E6C40830EEB3003F5E44 /* WONotificationBezelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WONotificationBezelView.h; sourceTree = "<group>"; };
+		BC26E6C50830EEB3003F5E44 /* WONotificationBezelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WONotificationBezelView.m; sourceTree = "<group>"; };
+		BC26E6D40830F918003F5E44 /* WONotificationBezelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WONotificationBezelManager.h; sourceTree = "<group>"; };
+		BC26E6D50830F918003F5E44 /* WONotificationBezelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WONotificationBezelManager.m; sourceTree = "<group>"; };
+		BC3F403A083D53570008E60B /* splash-lower-transition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-lower-transition.png"; sourceTree = "<group>"; };
+		BC3F403B083D53570008E60B /* splash-upper-transition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-upper-transition.png"; sourceTree = "<group>"; };
+		BC4A192B0C6E87DB00071B98 /* com.wincent.buildtools.gitrev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = com.wincent.buildtools.gitrev.h; sourceTree = "<group>"; };
+		BC4EFD13076379C800995991 /* miniCheckBoxSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniCheckBoxSelected.png; sourceTree = "<group>"; };
+		BC4EFD14076379C800995991 /* miniCheckBoxUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = miniCheckBoxUnselected.png; sourceTree = "<group>"; };
+		BC51F09B0B2C79C900F32073 /* WOBezelTests.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WOBezelTests.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WOTest.xcodeproj; path = ../../WOTest/src/WOTest.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BC51F0DA0B2C7B0800F32073 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = tests/Info.plist; sourceTree = "<group>"; };
+		BC51F0DC0B2C7B2400F32073 /* WincentTestBundle.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = WincentTestBundle.icns; path = tests/WincentTestBundle.icns; sourceTree = "<group>"; };
+		BC51F1680B2C893300F32073 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		BC51F4100B2C994900F32073 /* NSObjectTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSObjectTests.h; path = tests/NSObjectTests.h; sourceTree = "<group>"; };
+		BC51F4110B2C994900F32073 /* NSObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSObjectTests.m; path = tests/NSObjectTests.m; sourceTree = "<group>"; };
+		BC51F45B0B2CA1E300F32073 /* WOBezelViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOBezelViewTests.h; path = tests/WOBezelViewTests.h; sourceTree = "<group>"; };
+		BC51F45C0B2CA1E300F32073 /* WOBezelViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOBezelViewTests.m; path = tests/WOBezelViewTests.m; sourceTree = "<group>"; };
+		BC51F4600B2CA1EB00F32073 /* WOBezelWindowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOBezelWindowTests.h; path = tests/WOBezelWindowTests.h; sourceTree = "<group>"; };
+		BC51F4610B2CA1EB00F32073 /* WOBezelWindowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOBezelWindowTests.m; path = tests/WOBezelWindowTests.m; sourceTree = "<group>"; };
+		BC51F4650B2CA1FA00F32073 /* WONotificationBezelManagerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WONotificationBezelManagerTests.h; path = tests/WONotificationBezelManagerTests.h; sourceTree = "<group>"; };
+		BC51F4660B2CA1FA00F32073 /* WONotificationBezelManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WONotificationBezelManagerTests.m; path = tests/WONotificationBezelManagerTests.m; sourceTree = "<group>"; };
+		BC51F46A0B2CA20500F32073 /* WONotificationBezelViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WONotificationBezelViewTests.h; path = tests/WONotificationBezelViewTests.h; sourceTree = "<group>"; };
+		BC51F46B0B2CA20500F32073 /* WONotificationBezelViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WONotificationBezelViewTests.m; path = tests/WONotificationBezelViewTests.m; sourceTree = "<group>"; };
+		BC51F46F0B2CA20D00F32073 /* WONotificationBezelWindowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WONotificationBezelWindowTests.h; path = tests/WONotificationBezelWindowTests.h; sourceTree = "<group>"; };
+		BC51F4700B2CA20D00F32073 /* WONotificationBezelWindowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WONotificationBezelWindowTests.m; path = tests/WONotificationBezelWindowTests.m; sourceTree = "<group>"; };
+		BC51F4740B2CA21B00F32073 /* WOSplashViewTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOSplashViewTests.h; path = tests/WOSplashViewTests.h; sourceTree = "<group>"; };
+		BC51F4750B2CA21B00F32073 /* WOSplashViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOSplashViewTests.m; path = tests/WOSplashViewTests.m; sourceTree = "<group>"; };
+		BC51F4790B2CA22300F32073 /* WOSplashWindowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOSplashWindowTests.h; path = tests/WOSplashWindowTests.h; sourceTree = "<group>"; };
+		BC51F47A0B2CA22300F32073 /* WOSplashWindowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOSplashWindowTests.m; path = tests/WOSplashWindowTests.m; sourceTree = "<group>"; };
+		BC51F47E0B2CA22C00F32073 /* WOWindowTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOWindowTests.h; path = tests/WOWindowTests.h; sourceTree = "<group>"; };
+		BC51F47F0B2CA22C00F32073 /* WOWindowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WOWindowTests.m; path = tests/WOWindowTests.m; sourceTree = "<group>"; };
+		BC51F8D00B2CF62F00F32073 /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
+		BC90BAF409AF891300AAF708 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC90BB0509AF8A3200AAF708 /* folder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = folder.icns; sourceTree = "<group>"; };
+		BC91541A0988657A00575DE5 /* WOBezel_Version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = WOBezel_Version.h; sourceTree = "<group>"; };
+		BCAF030F073516250043CFC7 /* resizeTopLeftBottomRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resizeTopLeftBottomRight.png; sourceTree = "<group>"; };
+		BCAF0310073516250043CFC7 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		BCAF0311073516250043CFC7 /* resizeTopRightBottomLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resizeTopRightBottomLeft.png; sourceTree = "<group>"; };
+		BCAF0319073516320043CFC7 /* WOBezelView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WOBezelView.m; sourceTree = "<group>"; };
+		BCAF031E073516320043CFC7 /* WOBezelWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WOBezelWindow.h; sourceTree = "<group>"; };
+		BCAF031F073516320043CFC7 /* WOBezelView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WOBezelView.h; sourceTree = "<group>"; };
+		BCAF0320073516320043CFC7 /* WOBezelWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WOBezelWindow.m; sourceTree = "<group>"; };
+		BCAF03380735166E0043CFC7 /* WOBezel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WOBezel.h; sourceTree = "<group>"; };
+		BCAF0C8407374E300043CFC7 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		BCD875400767034700FAA179 /* no */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCDA475B083AA4CA009B5FA8 /* WOSplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOSplashView.h; sourceTree = "<group>"; };
+		BCDA475C083AA4CA009B5FA8 /* WOSplashWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOSplashWindow.m; sourceTree = "<group>"; };
+		BCDA475D083AA4CA009B5FA8 /* WOSplashWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOSplashWindow.h; sourceTree = "<group>"; };
+		BCDA475E083AA4CA009B5FA8 /* WOSplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOSplashView.m; sourceTree = "<group>"; };
+		BCDA4771083AA54E009B5FA8 /* WOWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOWindow.h; sourceTree = "<group>"; };
+		BCDA4772083AA54E009B5FA8 /* WOWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOWindow.m; sourceTree = "<group>"; };
+		BCFD64CF0F8660F900116980 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCFD65170F86637F00116980 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFD65190F86637F00116980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = demo/Info.plist; sourceTree = "<group>"; };
+		BCFD65200F8663A200116980 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BCFD65440F8666F800116980 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = demo/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BCFD65640F86679E00116980 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demo/main.m; sourceTree = "<group>"; };
+		BCFD65740F86683A00116980 /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoController.h; path = demo/DemoController.h; sourceTree = "<group>"; };
+		BCFD65750F86683A00116980 /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoController.m; path = demo/DemoController.m; sourceTree = "<group>"; };
+		BCFD65940F866C7A00116980 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = demo/splash.png; sourceTree = "<group>"; };
+		BCFD66850F88B15B00116980 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		BCFD67100F88BF8C00116980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = demo/en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BCFD6A9C0F88D67400116980 /* play-bezel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play-bezel.png"; path = "demo/play-bezel.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				BCAF0C8507374E300043CFC7 /* Carbon.framework in Frameworks */,
+				BC00F11008326C0E00007A5A /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC51F0990B2C79C900F32073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCCF1D90BB3EFC100A36444 /* WOTest.framework in Frameworks */,
+				BC51F0EA0B2C7BFC00F32073 /* Cocoa.framework in Frameworks */,
+				BC51F0E90B2C7BE600F32073 /* WOBezel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFD65150F86637F00116980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFD651F0F8663A200116980 /* WOBezel.framework in Frameworks */,
+				BCFD65210F8663A200116980 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* WOBezel.framework */,
+				BC51F09B0B2C79C900F32073 /* WOBezelTests.bundle */,
+				BCFD65170F86637F00116980 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* WOBezel */ = {
+			isa = PBXGroup;
+			children = (
+				BC0BADF01001F0E8007AE543 /* buildtools */,
+				BC0BAF051001F484007AE543 /* WOPublic */,
+				BC51F0F90B2C7CDD00F32073 /* Documentation */,
+				BC51F0B30B2C7A4B00F32073 /* Dependencies */,
+				BC90BAAD09AF837000AAF708 /* Configuration */,
+				BC1C2C3D075A04C200322AF6 /* Headers */,
+				BCAF0300073515FE0043CFC7 /* Categories */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				BC51F0630B2C787F00F32073 /* Tests */,
+				BCFD652B0F8663E800116980 /* Demo */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				BCFD65200F8663A200116980 /* Cocoa.framework */,
+			);
+			name = WOBezel;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BC00F10F08326C0E00007A5A /* ApplicationServices.framework */,
+				BCAF0C8407374E300043CFC7 /* Carbon.framework */,
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F8D00B2CF62F00F32073 /* RunTests.sh */,
+				BC3F403A083D53570008E60B /* splash-lower-transition.png */,
+				BC3F403B083D53570008E60B /* splash-upper-transition.png */,
+				BC4EFD13076379C800995991 /* miniCheckBoxSelected.png */,
+				BC4EFD14076379C800995991 /* miniCheckBoxUnselected.png */,
+				BCAF030F073516250043CFC7 /* resizeTopLeftBottomRight.png */,
+				BCAF0310073516250043CFC7 /* close.png */,
+				BCAF0311073516250043CFC7 /* resizeTopRightBottomLeft.png */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				BC90BB0509AF8A3200AAF708 /* folder.icns */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+				BCFD66850F88B15B00116980 /* LICENSE.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCAF031F073516320043CFC7 /* WOBezelView.h */,
+				BCAF0319073516320043CFC7 /* WOBezelView.m */,
+				BCAF031E073516320043CFC7 /* WOBezelWindow.h */,
+				BCAF0320073516320043CFC7 /* WOBezelWindow.m */,
+				BC26E6D40830F918003F5E44 /* WONotificationBezelManager.h */,
+				BC26E6D50830F918003F5E44 /* WONotificationBezelManager.m */,
+				BC26E6C40830EEB3003F5E44 /* WONotificationBezelView.h */,
+				BC26E6C50830EEB3003F5E44 /* WONotificationBezelView.m */,
+				BC26E6B50830EE90003F5E44 /* WONotificationBezelWindow.h */,
+				BC26E6B60830EE90003F5E44 /* WONotificationBezelWindow.m */,
+				BCDA475B083AA4CA009B5FA8 /* WOSplashView.h */,
+				BCDA475E083AA4CA009B5FA8 /* WOSplashView.m */,
+				BCDA475D083AA4CA009B5FA8 /* WOSplashWindow.h */,
+				BCDA475C083AA4CA009B5FA8 /* WOSplashWindow.m */,
+				BCDA4771083AA54E009B5FA8 /* WOWindow.h */,
+				BCDA4772083AA54E009B5FA8 /* WOWindow.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BC1C2C3D075A04C200322AF6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BC4A192B0C6E87DB00071B98 /* com.wincent.buildtools.gitrev.h */,
+				BCAF03380735166E0043CFC7 /* WOBezel.h */,
+				BC91541A0988657A00575DE5 /* WOBezel_Version.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		BC51F0630B2C787F00F32073 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F0C90B2C7AA800F32073 /* Resources */,
+				BC51F0C80B2C7AA300F32073 /* Classes */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		BC51F0B30B2C7A4B00F32073 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		BC51F0C80B2C7AA300F32073 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F4100B2C994900F32073 /* NSObjectTests.h */,
+				BC51F4110B2C994900F32073 /* NSObjectTests.m */,
+				BC51F45B0B2CA1E300F32073 /* WOBezelViewTests.h */,
+				BC51F45C0B2CA1E300F32073 /* WOBezelViewTests.m */,
+				BC51F4600B2CA1EB00F32073 /* WOBezelWindowTests.h */,
+				BC51F4610B2CA1EB00F32073 /* WOBezelWindowTests.m */,
+				BC51F4650B2CA1FA00F32073 /* WONotificationBezelManagerTests.h */,
+				BC51F4660B2CA1FA00F32073 /* WONotificationBezelManagerTests.m */,
+				BC51F46A0B2CA20500F32073 /* WONotificationBezelViewTests.h */,
+				BC51F46B0B2CA20500F32073 /* WONotificationBezelViewTests.m */,
+				BC51F46F0B2CA20D00F32073 /* WONotificationBezelWindowTests.h */,
+				BC51F4700B2CA20D00F32073 /* WONotificationBezelWindowTests.m */,
+				BC51F4740B2CA21B00F32073 /* WOSplashViewTests.h */,
+				BC51F4750B2CA21B00F32073 /* WOSplashViewTests.m */,
+				BC51F4790B2CA22300F32073 /* WOSplashWindowTests.h */,
+				BC51F47A0B2CA22300F32073 /* WOSplashWindowTests.m */,
+				BC51F47E0B2CA22C00F32073 /* WOWindowTests.h */,
+				BC51F47F0B2CA22C00F32073 /* WOWindowTests.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BC51F0C90B2C7AA800F32073 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F0DA0B2C7B0800F32073 /* Info.plist */,
+				BC51F0DC0B2C7B2400F32073 /* WincentTestBundle.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC51F0F90B2C7CDD00F32073 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				BC51F1680B2C893300F32073 /* Doxyfile */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		BC90BAAD09AF837000AAF708 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BC90BAB809AF83CA00AAF708 /* Project-level styles */,
+				BC90BAC409AF83E500AAF708 /* Targets */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BC90BAB809AF83CA00AAF708 /* Project-level styles */ = {
+			isa = PBXGroup;
+			children = (
+				BC0BAE551001F0FC007AE543 /* base-style.xcconfig */,
+				BC0BAE561001F0FC007AE543 /* debug-style.xcconfig */,
+				BC0BAE571001F0FC007AE543 /* release-style.xcconfig */,
+			);
+			name = "Project-level styles";
+			sourceTree = "<group>";
+		};
+		BC90BAC409AF83E500AAF708 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				BC0BAE581001F10B007AE543 /* cocoa-app-target.xcconfig */,
+				BC0BAE591001F10B007AE543 /* embeddable-framework-target.xcconfig */,
+				BC0BAE5A1001F10B007AE543 /* framework-target.xcconfig */,
+				BC0BAE5B1001F10B007AE543 /* loadable-bundle-target.xcconfig */,
+				BC0BAE5C1001F10B007AE543 /* loadable-test-bundle-target.xcconfig */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		BCAF0300073515FE0043CFC7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		BCCCF1B10BB3EF3900A36444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCCCF1BD0BB3EF3900A36444 /* WOTest.framework */,
+				BCCCF1BF0BB3EF3900A36444 /* WOTestRunner */,
+				BCCCF1C10BB3EF3900A36444 /* WOTestSelfTests.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFD652B0F8663E800116980 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD65610F86677F00116980 /* Other */,
+				BCFD652F0F86661600116980 /* Resources */,
+				BCFD652E0F86641F00116980 /* Headers */,
+				BCFD652D0F86641700116980 /* Classes */,
+				BCFD65190F86637F00116980 /* Info.plist */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		BCFD652D0F86641700116980 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD65740F86683A00116980 /* DemoController.h */,
+				BCFD65750F86683A00116980 /* DemoController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BCFD652E0F86641F00116980 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		BCFD652F0F86661600116980 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD6A9C0F88D67400116980 /* play-bezel.png */,
+				BCFD670F0F88BF8C00116980 /* Credits.rtf */,
+				BCFD65940F866C7A00116980 /* splash.png */,
+				BCFD65430F8666F800116980 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BCFD65610F86677F00116980 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD65640F86679E00116980 /* main.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* WOBezel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC58434B085F9B4000B457FE /* Build configuration list for PBXNativeTarget "WOBezel" */;
+			buildPhases = (
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+				BC81BB480AF1359900FBA1AD /* Run Script (headers symbolic link) */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				BCBC4B0508182A2D003529FA /* Run Script (strip) */,
+				BC90BB1209AF8A5200AAF708 /* Run Script (custom icon) */,
+				BC23AE7009B3448900F1CCDE /* Run Script (InfoPlist.strings preprocessing) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC90BC0E09AF997F00AAF708 /* PBXTargetDependency */,
+			);
+			name = WOBezel;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = WOBezel;
+			productReference = 8DC2EF5B0486A6940098B216 /* WOBezel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC51F09A0B2C79C900F32073 /* WOBezelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC51F0A60B2C79CA00F32073 /* Build configuration list for PBXNativeTarget "WOBezelTests" */;
+			buildPhases = (
+				BC51F0980B2C79C900F32073 /* Sources */,
+				BC51F0990B2C79C900F32073 /* Frameworks */,
+				BC51F0970B2C79C900F32073 /* Resources */,
+				BC51F0EB0B2C7C2400F32073 /* Run Script (custom icon) */,
+				BC51F0EF0B2C7C4200F32073 /* Run Script (strip) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC51F0AC0B2C79E800F32073 /* PBXTargetDependency */,
+				BCCCF1D80BB3EFB700A36444 /* PBXTargetDependency */,
+			);
+			name = WOBezelTests;
+			productName = WOBezelTests;
+			productReference = BC51F09B0B2C79C900F32073 /* WOBezelTests.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		BCFD65160F86637F00116980 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFD651C0F86638000116980 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				BCFD65140F86637F00116980 /* Sources */,
+				BCFD65150F86637F00116980 /* Frameworks */,
+				BCFD65130F86637F00116980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFD651E0F86638900116980 /* PBXTargetDependency */,
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = BCFD65170F86637F00116980 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BC584353085F9B4000B457FE /* Build configuration list for PBXProject "WOBezel" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				no,
+				Turkish,
+				en,
+				es,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* WOBezel */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BCCCF1B10BB3EF3900A36444 /* Products */;
+					ProjectRef = BC51F0B40B2C7A6E00F32073 /* WOTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BC90BC0C09AF996200AAF708 /* Update build number */,
+				8DC2EF4F0486A6940098B216 /* WOBezel */,
+				BC51F09A0B2C79C900F32073 /* WOBezelTests */,
+				BC51F0650B2C78AC00F32073 /* WOBezel + Tests */,
+				BC51F0670B2C78B900F32073 /* WOBezel + Tests (run) */,
+				BC51F0730B2C78E600F32073 /* WOBezel installed */,
+				BC51F0750B2C78FB00F32073 /* Copy headers */,
+				BC51F0F40B2C7C9A00F32073 /* Documentation */,
+				BCFD65160F86637F00116980 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BCCCF1BD0BB3EF3900A36444 /* WOTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WOTest.framework;
+			remoteRef = BCCCF1BC0BB3EF3900A36444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BCCCF1BF0BB3EF3900A36444 /* WOTestRunner */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = WOTestRunner;
+			remoteRef = BCCCF1BE0BB3EF3900A36444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BCCCF1C10BB3EF3900A36444 /* WOTestSelfTests.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WOTestSelfTests.bundle;
+			remoteRef = BCCCF1C00BB3EF3900A36444 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				BCAF0312073516250043CFC7 /* resizeTopLeftBottomRight.png in Resources */,
+				BCAF0313073516250043CFC7 /* close.png in Resources */,
+				BCAF0314073516250043CFC7 /* resizeTopRightBottomLeft.png in Resources */,
+				BC3F403C083D53570008E60B /* splash-lower-transition.png in Resources */,
+				BC3F403D083D53570008E60B /* splash-upper-transition.png in Resources */,
+				BC51F8D10B2CF62F00F32073 /* RunTests.sh in Resources */,
+				BCFD66860F88B15B00116980 /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC51F0970B2C79C900F32073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC51F0DD0B2C7B2500F32073 /* WincentTestBundle.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFD65130F86637F00116980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFD65450F8666F800116980 /* MainMenu.xib in Resources */,
+				BCFD65950F866C7A00116980 /* splash.png in Resources */,
+				BCFD67110F88BF8C00116980 /* Credits.rtf in Resources */,
+				BCFD6A9D0F88D67400116980 /* play-bezel.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC23AE7009B3448900F1CCDE /* Run Script (InfoPlist.strings preprocessing) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (InfoPlist.strings preprocessing)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/PreprocessInfoPlistStrings.sh\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\n";
+		};
+		BC51F08F0B2C795800F32073 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/InstallFramework.sh\" \"WOBezel\"\n";
+		};
+		BC51F0930B2C79B000F32073 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#export MallocStackLogging=1\n\nexport DYLD_FRAMEWORK_PATH=\"${TARGET_BUILD_DIR}\"\n\n\"${TARGET_BUILD_DIR}/WOTest.framework/Versions/A/Resources/WOTestRunner\" \\\n--test-bundle=\"${TARGET_BUILD_DIR}/WOBezel.framework/Versions/A/Resources/WOBezelTests.bundle\"";
+		};
+		BC51F0EB0B2C7C2400F32073 /* Run Script (custom icon) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (custom icon)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# BUG: Finder ignores CFBundleIconFile for this type of bundle: do things the hard way:\n\n. \"${BUILDTOOLS_DIR}/SetCustomFolderIcon.sh\" \"${SOURCE_ROOT}/tests/WincentTestBundle.icns\"\n";
+		};
+		BC51F0EF0B2C7C4200F32073 /* Run Script (strip) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (strip)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/StripDSYM.sh\"\n";
+		};
+		BC51F0F30B2C7C9A00F32073 /* Run Script (Doxygen) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Doxygen)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/RunDoxygen.sh\"\n";
+		};
+		BC81BB480AF1359900FBA1AD /* Run Script (headers symbolic link) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (headers symbolic link)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/FrameworkHeadersLink.sh\"\n";
+		};
+		BC90BB1209AF8A5200AAF708 /* Run Script (custom icon) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (custom icon)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${BUILDTOOLS_DIR}/SetCustomFolderIcon.sh\" folder.icns";
+		};
+		BC90BC0B09AF996200AAF708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\ncd \"${SOURCE_ROOT}\"\n\"${BUILDTOOLS_DIR}/UpdateGitRevisionNumbers.rb\"\n. \"${BUILDTOOLS_DIR}/UpdateBuildVersionNumbers.sh\" \"WOBezel_Version.h\"";
+		};
+		BCBC4B0508182A2D003529FA /* Run Script (strip) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (strip)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#. \"${BUILDTOOLS_DIR}/Strip.sh\"\n. \"${BUILDTOOLS_DIR}/StripDSYM.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAF0321073516320043CFC7 /* WOBezelView.m in Sources */,
+				BCAF0328073516320043CFC7 /* WOBezelWindow.m in Sources */,
+				BC26E6BA0830EE90003F5E44 /* WONotificationBezelWindow.m in Sources */,
+				BC26E6C90830EEB3003F5E44 /* WONotificationBezelView.m in Sources */,
+				BC26E6D70830F918003F5E44 /* WONotificationBezelManager.m in Sources */,
+				BCDA4760083AA4CA009B5FA8 /* WOSplashWindow.m in Sources */,
+				BCDA4762083AA4CA009B5FA8 /* WOSplashView.m in Sources */,
+				BCDA4774083AA54E009B5FA8 /* WOWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC51F0980B2C79C900F32073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC51F4120B2C994900F32073 /* NSObjectTests.m in Sources */,
+				BC51F45D0B2CA1E300F32073 /* WOBezelViewTests.m in Sources */,
+				BC51F4620B2CA1EB00F32073 /* WOBezelWindowTests.m in Sources */,
+				BC51F4670B2CA1FA00F32073 /* WONotificationBezelManagerTests.m in Sources */,
+				BC51F46C0B2CA20500F32073 /* WONotificationBezelViewTests.m in Sources */,
+				BC51F4710B2CA20D00F32073 /* WONotificationBezelWindowTests.m in Sources */,
+				BC51F4760B2CA21B00F32073 /* WOSplashViewTests.m in Sources */,
+				BC51F47B0B2CA22300F32073 /* WOSplashWindowTests.m in Sources */,
+				BC51F4800B2CA22C00F32073 /* WOWindowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFD65140F86637F00116980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFD65650F86679E00116980 /* main.m in Sources */,
+				BCFD65760F86683A00116980 /* DemoController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC51F06B0B2C78C100F32073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC51F0650B2C78AC00F32073 /* WOBezel + Tests */;
+			targetProxy = BC51F06A0B2C78C100F32073 /* PBXContainerItemProxy */;
+		};
+		BC51F08C0B2C794900F32073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* WOBezel */;
+			targetProxy = BC51F08B0B2C794900F32073 /* PBXContainerItemProxy */;
+		};
+		BC51F0AA0B2C79E000F32073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC51F09A0B2C79C900F32073 /* WOBezelTests */;
+			targetProxy = BC51F0A90B2C79E000F32073 /* PBXContainerItemProxy */;
+		};
+		BC51F0AC0B2C79E800F32073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* WOBezel */;
+			targetProxy = BC51F0AB0B2C79E800F32073 /* PBXContainerItemProxy */;
+		};
+		BC90BC0E09AF997F00AAF708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC90BC0C09AF996200AAF708 /* Update build number */;
+			targetProxy = BC90BC0D09AF997F00AAF708 /* PBXContainerItemProxy */;
+		};
+		BCCCF1D80BB3EFB700A36444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WOTest;
+			targetProxy = BCCCF1D70BB3EFB700A36444 /* PBXContainerItemProxy */;
+		};
+		BCFD651E0F86638900116980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* WOBezel */;
+			targetProxy = BCFD651D0F86638900116980 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCD875400767034700FAA179 /* no */,
+				BC90BAF409AF891300AAF708 /* en */,
+				BCFD64CF0F8660F900116980 /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCFD65430F8666F800116980 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFD65440F8666F800116980 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BCFD670F0F88BF8C00116980 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFD67100F88BF8C00116980 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC51F06E0B2C78DF00F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel + Tests";
+			};
+			name = Debug;
+		};
+		BC51F06F0B2C78DF00F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel + Tests";
+			};
+			name = Release;
+		};
+		BC51F0710B2C78DF00F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel + Tests (run)";
+			};
+			name = Debug;
+		};
+		BC51F0720B2C78DF00F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel + Tests (run)";
+			};
+			name = Release;
+		};
+		BC51F0A10B2C79CA00F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel installed";
+			};
+			name = Debug;
+		};
+		BC51F0A20B2C79CA00F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "WOBezel installed";
+			};
+			name = Release;
+		};
+		BC51F0A40B2C79CA00F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Copy headers";
+			};
+			name = Debug;
+		};
+		BC51F0A50B2C79CA00F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Copy headers";
+			};
+			name = Release;
+		};
+		BC51F0A70B2C79CA00F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE5C1001F10B007AE543 /* loadable-test-bundle-target.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = tests/Info.plist;
+				INFOPLIST_PREFIX_HEADER = WOBezel_Version.h;
+				PRODUCT_NAME = WOBezelTests;
+			};
+			name = Debug;
+		};
+		BC51F0A80B2C79CA00F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE5C1001F10B007AE543 /* loadable-test-bundle-target.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = tests/Info.plist;
+				INFOPLIST_PREFIX_HEADER = WOBezel_Version.h;
+				PRODUCT_NAME = WOBezelTests;
+			};
+			name = Release;
+		};
+		BC51F0F70B2C7CC300F32073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Documentation;
+			};
+			name = Debug;
+		};
+		BC51F0F80B2C7CC300F32073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = Documentation;
+			};
+			name = Release;
+		};
+		BC58434C085F9B4000B457FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE591001F10B007AE543 /* embeddable-framework-target.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREFIX_HEADER = WOBezel_Version.h;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xd1000000,
+				);
+				PRODUCT_NAME = WOBezel;
+			};
+			name = Debug;
+		};
+		BC58434D085F9B4000B457FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE591001F10B007AE543 /* embeddable-framework-target.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_PREFIX_HEADER = WOBezel_Version.h;
+				OTHER_LDFLAGS = (
+					"-seg1addr",
+					0xd1000000,
+				);
+				PRODUCT_NAME = WOBezel;
+			};
+			name = Release;
+		};
+		BC584354085F9B4000B457FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE561001F0FC007AE543 /* debug-style.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BC584355085F9B4000B457FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE571001F0FC007AE543 /* release-style.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		BC90BC1209AF999D00AAF708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Update build number";
+			};
+			name = Debug;
+		};
+		BC90BC1309AF999D00AAF708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Update build number";
+			};
+			name = Release;
+		};
+		BCFD651A0F86638000116980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE581001F10B007AE543 /* cocoa-app-target.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = demo/Info.plist;
+				PRODUCT_NAME = Demo;
+			};
+			name = Debug;
+		};
+		BCFD651B0F86638000116980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC0BAE581001F10B007AE543 /* cocoa-app-target.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = demo/Info.plist;
+				PRODUCT_NAME = Demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC51F06D0B2C78DF00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel + Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F06E0B2C78DF00F32073 /* Debug */,
+				BC51F06F0B2C78DF00F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC51F0700B2C78DF00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel + Tests (run)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F0710B2C78DF00F32073 /* Debug */,
+				BC51F0720B2C78DF00F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC51F0A00B2C79CA00F32073 /* Build configuration list for PBXAggregateTarget "WOBezel installed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F0A10B2C79CA00F32073 /* Debug */,
+				BC51F0A20B2C79CA00F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC51F0A30B2C79CA00F32073 /* Build configuration list for PBXAggregateTarget "Copy headers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F0A40B2C79CA00F32073 /* Debug */,
+				BC51F0A50B2C79CA00F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC51F0A60B2C79CA00F32073 /* Build configuration list for PBXNativeTarget "WOBezelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F0A70B2C79CA00F32073 /* Debug */,
+				BC51F0A80B2C79CA00F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC51F0F60B2C7CC300F32073 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC51F0F70B2C7CC300F32073 /* Debug */,
+				BC51F0F80B2C7CC300F32073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC58434B085F9B4000B457FE /* Build configuration list for PBXNativeTarget "WOBezel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC58434C085F9B4000B457FE /* Debug */,
+				BC58434D085F9B4000B457FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC584353085F9B4000B457FE /* Build configuration list for PBXProject "WOBezel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC584354085F9B4000B457FE /* Debug */,
+				BC584355085F9B4000B457FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC90BC1109AF999D00AAF708 /* Build configuration list for PBXAggregateTarget "Update build number" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC90BC1209AF999D00AAF708 /* Debug */,
+				BC90BC1309AF999D00AAF708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFD651C0F86638000116980 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFD651A0F86638000116980 /* Debug */,
+				BCFD651B0F86638000116980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

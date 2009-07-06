@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		0259C573FE90428111CA0C5A = {
+			buildSettings = {
+			};
+			buildStyles = (
+				2E58F360FFB2326E11CA0CBA,
+				2E58F361FFB2326E11CA0CBA,
+				BC657304075BEA83004DEA8B,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 0259C574FE90428111CA0C5A;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BCC3C2DF07621DD8004F10E6;
+					ProjectRef = BCC3C2DE07621DD8004F10E6;
+				},
+			);
+			targets = (
+				8D1AC9600486D14A00FE50C9,
+			);
+		};
+		0259C574FE90428111CA0C5A = {
+			children = (
+				BCAF03C207351A5D0043CFC7,
+				32DBCF9E0370C38000C91783,
+				32DBCF9F0370C38200C91783,
+				0259C582FE90428111CA0C5A,
+				1ED78706FE9D4A0611CA0C5A,
+				2E58F364FFB232C311CA0CBA,
+			);
+			isa = PBXGroup;
+			name = WOBezelPalette;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C577FE90428111CA0C5A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = WOBezelPaletteInspector.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C578FE90428111CA0C5A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = WOBezelPalette.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C57BFE90428111CA0C5A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = WOBezelPaletteInspector.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C57CFE90428111CA0C5A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = WOBezelPalette.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C57EFE90428111CA0C5A = {
+			children = (
+				0259C57FFE90428111CA0C5A,
+			);
+			isa = PBXVariantGroup;
+			name = WOBezelPaletteInspector.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C57FFE90428111CA0C5A = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = English.lproj/WOBezelPaletteInspector.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C582FE90428111CA0C5A = {
+			children = (
+				BC657345075BEC56004DEA8B,
+				8D1AC9730486D14A00FE50C9,
+				8D1AC97F0486D23B00FE50C9,
+				0259C57EFE90428111CA0C5A,
+				BCC3C42B0762246D004F10E6,
+				0259C583FE90428111CA0C5A,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		0259C583FE90428111CA0C5A = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = palette.table;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//020
+//021
+//022
+//023
+//024
+//1E0
+//1E1
+//1E2
+//1E3
+//1E4
+		1ED78706FE9D4A0611CA0C5A = {
+			children = (
+				8D1AC9740486D14A00FE50C9,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//1E0
+//1E1
+//1E2
+//1E3
+//1E4
+//2E0
+//2E1
+//2E2
+//2E3
+//2E4
+		2E58F360FFB2326E11CA0CBA = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DDEBUG";
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		2E58F361FFB2326E11CA0CBA = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		2E58F362FFB2327711CA0CBA = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = InterfaceBuilder.framework;
+			path = /System/Library/Frameworks/InterfaceBuilder.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		2E58F364FFB232C311CA0CBA = {
+			children = (
+				BC65730F075BEADD004DEA8B,
+				2E58F362FFB2327711CA0CBA,
+				DD92D38A0106425D02CA0E72,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//2E0
+//2E1
+//2E2
+//2E3
+//2E4
+//320
+//321
+//322
+//323
+//324
+		32DBCF980370C29C00C91783 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = WOBezelPalette_Prefix.pch;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		32DBCF9E0370C38000C91783 = {
+			children = (
+				0259C57BFE90428111CA0C5A,
+				0259C577FE90428111CA0C5A,
+				0259C57CFE90428111CA0C5A,
+				0259C578FE90428111CA0C5A,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		32DBCF9F0370C38200C91783 = {
+			children = (
+				32DBCF980370C29C00C91783,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//320
+//321
+//322
+//323
+//324
+//8D0
+//8D1
+//8D2
+//8D3
+//8D4
+		8D1AC9600486D14A00FE50C9 = {
+			buildPhases = (
+				8D1AC9610486D14A00FE50C9,
+				8D1AC9660486D14A00FE50C9,
+				8D1AC96A0486D14A00FE50C9,
+				8D1AC9710486D14A00FE50C9,
+				BCAF055F073562150043CFC7,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WOBezelPalette_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Developer/Palettes";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-bundle";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = WOBezelPalette;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = palette;
+			};
+			dependencies = (
+				BCC3C2E107621DDE004F10E6,
+			);
+			isa = PBXNativeTarget;
+			name = WOBezelPalette;
+			productInstallPath = "$(HOME)/Developer/Palettes";
+			productName = WOBezelPalette;
+			productReference = 8D1AC9740486D14A00FE50C9;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1AC9610486D14A00FE50C9 = {
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9620486D14A00FE50C9,
+				8D1AC9640486D14A00FE50C9,
+				8D1AC9650486D14A00FE50C9,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC9620486D14A00FE50C9 = {
+			fileRef = 32DBCF980370C29C00C91783;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D1AC9640486D14A00FE50C9 = {
+			fileRef = 0259C57BFE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D1AC9650486D14A00FE50C9 = {
+			fileRef = 0259C57CFE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D1AC9660486D14A00FE50C9 = {
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC9670486D14A00FE50C9,
+				8D1AC9690486D14A00FE50C9,
+				8D1AC9800486D23B00FE50C9,
+				BC657346075BEC56004DEA8B,
+				BCC3C42D0762246D004F10E6,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC9670486D14A00FE50C9 = {
+			fileRef = 0259C57EFE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D1AC9690486D14A00FE50C9 = {
+			fileRef = 0259C583FE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		8D1AC96A0486D14A00FE50C9 = {
+			buildActionMask = 2147483647;
+			files = (
+				8D1AC96C0486D14A00FE50C9,
+				8D1AC96D0486D14A00FE50C9,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC96C0486D14A00FE50C9 = {
+			fileRef = 0259C577FE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		8D1AC96D0486D14A00FE50C9 = {
+			fileRef = 0259C578FE90428111CA0C5A;
+			isa = PBXBuildFile;
+			settings = {
+				ATTRIBUTES = (
+				);
+			};
+		};
+		8D1AC9710486D14A00FE50C9 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXRezBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1AC9730486D14A00FE50C9 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist;
+			path = Info.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		8D1AC9740486D14A00FE50C9 = {
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = WOBezelPalette.palette;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8D1AC97B0486D23100FE50C9 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		8D1AC97F0486D23B00FE50C9 = {
+			children = (
+				8D1AC97B0486D23100FE50C9,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		8D1AC9800486D23B00FE50C9 = {
+			fileRef = 8D1AC97F0486D23B00FE50C9;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//8D0
+//8D1
+//8D2
+//8D3
+//8D4
+//BC0
+//BC1
+//BC2
+//BC3
+//BC4
+		BC657304075BEA83004DEA8B = {
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				INSTALL_PATH = "$(HOME)/Developer/Palettes/";
+			};
+			isa = PBXBuildStyle;
+			name = Installed;
+		};
+		BC65730F075BEADD004DEA8B = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = WOBezel.framework;
+			path = /Library/Frameworks/WOBezel.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BC657310075BEADD004DEA8B = {
+			fileRef = BC65730F075BEADD004DEA8B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BC657345075BEC56004DEA8B = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.tiff;
+			path = WOBezel.tiff;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BC657346075BEC56004DEA8B = {
+			fileRef = BC657345075BEC56004DEA8B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BCAF03C207351A5D0043CFC7 = {
+			children = (
+				BCC3C2DE07621DD8004F10E6,
+			);
+			isa = PBXGroup;
+			name = Dependencies;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BCAF055F073562150043CFC7 = {
+			buildActionMask = 2147483647;
+			files = (
+				BCAF0562073562210043CFC7,
+				BCAF0563073562210043CFC7,
+				BC657310075BEADD004DEA8B,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAF0562073562210043CFC7 = {
+			fileRef = 2E58F362FFB2327711CA0CBA;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BCAF0563073562210043CFC7 = {
+			fileRef = DD92D38A0106425D02CA0E72;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BCC3C2DE07621DD8004F10E6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "wrapper.pb-project";
+			name = WOBezel.xcode;
+			path = "/Users/wincent/trabajo/WOBezel/svn-files/WOBezel.xcode";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BCC3C2DF07621DD8004F10E6 = {
+			children = (
+				BCC3C2EF07621DF2004F10E6,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BCC3C2E007621DDE004F10E6 = {
+			containerPortal = BCC3C2DE07621DD8004F10E6;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = WOBezel;
+		};
+		BCC3C2E107621DDE004F10E6 = {
+			isa = PBXTargetDependency;
+			name = "WOBezel (from WOBezel.xcode)";
+			targetProxy = BCC3C2E007621DDE004F10E6;
+		};
+		BCC3C2EF07621DF2004F10E6 = {
+			fileType = wrapper.framework;
+			isa = PBXReferenceProxy;
+			path = WOBezel.framework;
+			refType = 3;
+			remoteRef = BCC3C2F307621E02004F10E6;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BCC3C2F307621E02004F10E6 = {
+			containerPortal = BCC3C2DE07621DD8004F10E6;
+			isa = PBXContainerItemProxy;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = WOBezel;
+		};
+		BCC3C42B0762246D004F10E6 = {
+			children = (
+				BCC3C42C0762246D004F10E6,
+			);
+			isa = PBXVariantGroup;
+			name = WOBezelPalette.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BCC3C42C0762246D004F10E6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = English;
+			path = English.lproj/WOBezelPalette.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BCC3C42D0762246D004F10E6 = {
+			fileRef = BCC3C42B0762246D004F10E6;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//BC0
+//BC1
+//BC2
+//BC3
+//BC4
+//DD0
+//DD1
+//DD2
+//DD3
+//DD4
+		DD92D38A0106425D02CA0E72 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+	};
+	rootObject = 0259C573FE90428111CA0C5A;
+}

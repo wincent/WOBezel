@@ -1,0 +1,4 @@
+*.bak
+*.temp
+com.wincent.buildtools.gitrev.h
+index
